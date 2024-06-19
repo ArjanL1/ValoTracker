@@ -1,0 +1,1 @@
+Valowebsite is a powerful tool designed to display comprehensive stats for Valorant players. By simply inputting a player's username, you can access detailed information including KDA, wins, losses, current rank, peak rank, and headshot rate.
