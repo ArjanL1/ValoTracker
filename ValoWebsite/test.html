@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="match-history-title">Valorant Private Tracker</h1>
+        <div id="form-container">
+            <div class="input-container">
+                <label for="username-id"></label>
+                <input type="text" id="username-id" name="username-id" placeholder="Find a player, ie. player#NA1" required>
+            </div>
+            <button class="custom-button" onclick="getMatchHistory()">CHECKUP</button>
+        </div>
+        <div class="rank-info-container">
+            <div id="mmr-info">
+                <h2>Rank Information</h2>
+                <p id="current-rank">Current:</p>
+                <p id="highest-rank-achieved">Highest:</p>
+                <p id="season-highest-rank">Season:</p>
+            </div>
+            <div id="overall-stats-container">
+                <h2>Overall Stats</h2>
+                <div id="stats-container">
+                    <div class="stat-item">
+                        <p class="stat-label"></p>
+                        <p id="avg-kda-ratio" class="stat-value"></p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label"></p>
+                        <p id="avg-damage-per-round" class="stat-value"></p>
+                    </div>
+                </div>
+                <div id="stats-image-container">
+                  <img src="Body-PNG-Images.png" alt="Body PNG Image">
+                  <div id="headshot-container" class="shot-container">
+                    <p id="avg-headshot-rate" class="stat-text"></p>
+                  </div>
+                  <div id="bodyshot-container" class="shot-container">
+                    <p id="avg-bodyshot-rate" class="stat-text"></p>
+                  </div>
+                  <div id="legshot-container" class="shot-container">
+                    <p id="avg-legshot-rate" class="stat-text"></p>
+                  </div>
+                </div>
+              </div>
+            <div class="match-history-container" id="match-history-container">
+            </div>
+            <div id="duplicate-players-container">
+              <h2>Potiential Duos</h2>
+              <div id="duplicate-players-list"></div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
